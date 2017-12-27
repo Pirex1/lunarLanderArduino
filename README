@@ -1,0 +1,20 @@
+This is a game inspired by the 1979 Atari game "Lunar Lander". They used to have
+a version of this in the Telus World of Science in Edmonton Alberta. As a kid i
+would play it for hours while i was at the science center until my parents came
+and forced me to do something else. I have also added some of my own features to
+it that i think make the game more fun and challenging.
+
+The basic concept of the game is too land the lunar ship on flat areas marked by
+score boards. The harder the area to land, the more points you receive. The diff-
+culty of this game comes from the limited fuel you posses on each run, which
+is dependent on the difficulty selected at the start of the game. The physics
+implemented are simple kinematic formulas that add to the realism of the game.
+
+Features Added from Base Game:
+1. Difficulty selector that changes starting fuel costs and some other variables
+2. Colors and Sounds!!
+3. Led that flash on the Arduino which correspond to low fuel
+
+My goal was too work on this for a couple hours each week to both give myself a
+break from studying and to make sure my coding skills improved over the
+Christmas break between first and second semester.
