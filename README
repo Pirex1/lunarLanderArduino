@@ -18,3 +18,70 @@ Features Added from Base Game:
 My goal was too work on this for a couple hours each week to both give myself a
 break from studying and to make sure my coding skills improved over the
 Christmas break between first and second semester.
+
+Wiring Instructions:
+
+We only wire some of the pins. Your kit should only have pins on one side.
+The other side has been rendered useless. They are for a different data transfer
+mode that we will not use (8 bit). In fact, we have soldered some jumpers on the
+back of the board to only allow the data transfer mode we will use (SPI,
+the major benefit being it uses fewer wires).
+
+!!! CAUTION !!!
+The display itself uses 3.3v logic. The pins on the breakout board that we have
+soldered use 5v logic and the board has a voltage converter to interact with
+the display. Follow the wiring instructions below very carefully and do not
+connect anything else.
+
+
+Wiring: from bottom to top on the right side (the side with the pins).
+
+Board Pin <---> Arduino Pin
+===========================
+LED
+===========================
+GND             GND
+Vin             5V
+3Vo             NOT CONNECTED
+CLK             52
+MISO            50
+MOSI            51
+CS              10
+D/C             9
+RST             NOT CONNECTED
+Lite            NOT CONNECTED
+Y+              A2 (analog pin)
+X+              4  (digital pin)
+Y-              5  (digital pin)
+X-              A3 (analog pin)
+IM0 - IM3       NOT CONNECTED (they expect a 3.3v signal, DON'T CONNECT!)
+CCS             6
+CD              NOT CONNECTED
+============================
+JOYSTICK
+============================
+GND				GND
+5V 				5V
+VRX				A1
+VRY 			A0
+SW				7
+============================
+LED
+============================
+GND				GND
+POS 			13
+============================
+PUSHBUTTON
+============================
+GND				GND
+INPUT			8
+============================
+SPEAKER
+============================
+GND				GND
+
+
+
+Tip: Tie together the long wires that stretch across the board to keep things
+organized. I used the twist tie that came with my USB cable.
+
